@@ -6,14 +6,14 @@ var campos = [
 
 var tBody = document.querySelector("table tbody");
 
-document.querySelector(".form").addEventListener("submit", function(event){
+document.querySelector(".form").addEventListener("submit", function (event) {
   event.preventDefault();
   var tr = document.createElement("tr");
 
-  campos.forEach(function(campos){
-      var td = document.createElement("td");
-      td.textContent = campos.value;
-      tr.appendChild(td);
+  campos.forEach(function (campos) {
+    var td = document.createElement("td");
+    td.textContent = campos.value;
+    tr.appendChild(td);
   });
 
   var tdVolume = document.createElement("td");
